@@ -1,0 +1,132 @@
+:root {
+  --main-color: #f4efe8;
+  --text-color: #c39e6d;
+  --base-color: #ffb300;
+}
+* {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+/*
+ * The Fonts
+ */
+@font-face {
+  font-family: "AraJozoor-Regular";
+  src: url("../webfonts/AraJozoor-Regular/AraJozoor-Regular.eot");
+  src: url("../webfonts/AraJozoor-Regular/AraJozoor-Regular.woff")
+    format("woff");
+}
+body {
+  font-family: "AraJozoor-Regular";
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+ * Start Landing & Header
+ */
+.landing {
+  background-color: #242d4a;
+  background: -webkit-linear-gradient(to right, #b4d295, #242d4a);
+  background: linear-gradient(to right, #c39e6d, #242d4a);
+  position: relative;
+  height: 100vh;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  top: 10%;
+  padding: 10px;
+}
+.header-area .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.header-area .links {
+  text-align: center;
+}
+.header-area .links li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+.header-area .links li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.header-area .icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--main-color);
+  float: right;
+}
+.header-area .icons i {
+  padding-left: 10px;
+}
+.header-area .links li a:hover,
+.header-area .icons i:hover,
+.landing .socail i:hover {
+  color: var(--text-color);
+  transition: ease 0.3s;
+}
+.landing .intro {
+  position: absolute;
+  width: 485px;
+  top: 50%;
+  left: 50%;
+  transform: translate(19%, -50%);
+  text-align: right;
+  color: var(--main-color);
+}
+.landing .intro .heading {
+  margin: 0;
+  font-size: 42pt;
+  font-weight: bolder;
+  line-height: 1.4;
+}
+.landing .intro p {
+  margin-top: 2em;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.landing .intro .btn {
+  display: inline-block;
+  background-color: var(--text-color);
+  padding: 5px 25px 5px 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--main-color);
+  border-radius: 20px;
+  margin-top: 2em;
+}
+.landing .intro .btn:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  transition: ease 0.3s;
+}
+.landing .intro-image img {
+  position: absolute;
+  width: 550px;
+  top: 15%;
+  left: 5%;
+}
+.landing .socail {
+  position: absolute;
+  justify-content: space-around;
+  bottom: 5%;
+  right: 7%;
+  color: var(--text-color);
+}
+.landing .socail i {
+  margin-left: 1.5rem;
+}
